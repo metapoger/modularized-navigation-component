@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_onboarding"
+    app:startDestination="@id/onBoarding1Fragment">
+
+    <fragment
+        android:id="@+id/onBoarding1Fragment"
+        android:name="com.metapoger.onboarding.OnBoarding1Fragment"
+        android:label="OnBoarding1Fragment"
+        tools:layout="@layout/fragment_onboarding_1">
+        <action
+            android:id="@+id/action_onBoarding1Fragment_to_onBoarding2Fragment"
+            app:destination="@id/onBoarding2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onBoarding2Fragment"
+        android:name="com.metapoger.onboarding.OnBoarding2Fragment"
+        android:label="OnBoarding2Fragment"
+        tools:layout="@layout/fragment_onboarding_1">
+        <action
+            android:id="@+id/action_onBoarding2Fragment_to_onBoarding3Fragment"
+            app:destination="@id/onBoarding3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onBoarding3Fragment"
+        android:name="com.metapoger.onboarding.OnBoarding3Fragment"
+        android:label="OnBoarding3Fragment"
+        tools:layout="@layout/fragment_onboarding_1"/>
+</navigation>

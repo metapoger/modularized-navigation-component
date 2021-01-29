@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_user_flow"
+    app:startDestination="@id/fragmentUserList"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/fragmentUserList"
+        android:label="FragmentUserList"
+        android:name="com.metapoger.usersList.UserListFragment"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/actionUserFromListToDetails"
+            app:destination="@id/nav_user_details" >
+            <argument
+                android:name="user"
+                app:argType="com.metapoger.core.model.User"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <include app:graph="@navigation/nav_user_details" />
+</navigation>

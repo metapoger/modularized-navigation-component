@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_settings"
+    app:startDestination="@id/settingsMainFragment">
+
+    <fragment
+        android:id="@+id/settingsMainFragment"
+        android:name="com.metapoger.setings.SettingsMainFragment"
+        android:label="fragment_settings_main"
+        tools:layout="@layout/fragment_settings_main" >
+        <action
+            android:id="@+id/action_settingsMainFragment_to_someSetingsFragment"
+            app:destination="@id/someSetingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/someSetingsFragment"
+        android:name="com.metapoger.setings.someSetting.SomeSettingFragment"
+        android:label="fragment_some_setings"
+        tools:layout="@layout/fragment_some_settings" />
+</navigation>

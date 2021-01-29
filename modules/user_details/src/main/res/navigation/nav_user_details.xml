@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user_details"
+    app:startDestination="@id/userDetailsFragment"
+    tools:ignore="UnusedNavigation">
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.metapoger.user_details.UserDetailsFragment"
+        tools:layout="@layout/fragment_user_details"
+        android:label="UserDetailsFragment">
+        <argument
+            android:name="user"
+            app:argType="com.metapoger.core.model.User"
+            app:nullable="false" />
+    </fragment>
+</navigation>

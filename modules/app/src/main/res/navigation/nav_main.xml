@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@+id/nav_splash">
+
+    <include
+        android:id="@+id/nav_splash"
+        app:graph="@navigation/nav_splash"/>
+
+    <action
+        android:id="@+id/action_global_to_onboarding"
+        app:destination="@id/nav_onboarding"
+        app:popUpTo="@id/nav_main"
+        app:popUpToInclusive="true"/>
+
+    <include
+        android:id="@+id/nav_onboarding"
+        app:graph="@navigation/nav_onboarding"/>
+
+    <action
+        android:id="@+id/action_global_to_home"
+        app:destination="@id/nav_home"
+        app:popUpTo="@id/nav_main"
+        app:popUpToInclusive="true"/>
+
+    <include
+        android:id="@+id/nav_home"
+        app:graph="@navigation/nav_home"/>
+
+</navigation>

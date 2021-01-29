@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onBoardingText">On boarding %d.\nTap screen to go further</string>
+    <string name="onBoardingSkip">Skip on boarding</string>
+</resources>

@@ -1,0 +1,28 @@
+rootProject.name = "modularized-navigation-component"
+
+include ':core'
+project(':core').projectDir = new File(rootDir, 'modules/core')
+
+include ':app'
+project(':app').projectDir = new File(rootDir, 'modules/app')
+
+include ':home_screen'
+project(':home_screen').projectDir = new File(rootDir, 'modules/home_screen')
+
+include ':settings'
+project(':settings').projectDir = new File(rootDir, 'modules/settings')
+
+include ':user_details'
+project(':user_details').projectDir = new File(rootDir, 'modules/user_details')
+
+include ':users_list'
+project(':users_list').projectDir = new File(rootDir, 'modules/users_list')
+
+include ':splash'
+project(':splash').projectDir = new File(rootDir, 'modules/splash')
+
+include ':onboarding'
+project(':onboarding').projectDir = new File(rootDir, 'modules/onboarding')
+
+include ':navigation'
+project(':navigation').projectDir = new File(rootDir, 'modules/navigation')

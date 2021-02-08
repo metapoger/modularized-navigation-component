@@ -15,7 +15,7 @@ class OnBoarding3Fragment: BaseFragment(R.layout.fragment_onboarding_3) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.onBoardingText.text = String.format(getString(R.string.onBoardingText), 1)
+        binding.onBoardingText.text = String.format(getString(R.string.onBoardingText), 3)
         binding.onBoardingText.setOnClickListener {
             findNavController().navigate(NavMainDirections.actionGlobalToHome())
         }

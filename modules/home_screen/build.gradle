@@ -65,4 +65,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
 
     implementation "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
+    implementation "androidx.fragment:fragment-ktx:$FRAGMENT_VERSION"
 }

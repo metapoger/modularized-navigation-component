@@ -57,4 +57,7 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:$FRAGMENT_VERSION"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$KOTLIN_VERSION"
     implementation "androidx.appcompat:appcompat:$SUPPORT_LIB_VERSION"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
+    implementation "androidx.fragment:fragment-ktx:$FRAGMENT_VERSION"
 }

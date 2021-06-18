@@ -54,7 +54,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
 
-    api "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
-    api "androidx.fragment:fragment-ktx:$FRAGMENT_VERSION"
+    implementation "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
+    implementation "androidx.fragment:fragment-ktx:$FRAGMENT_VERSION"
 }
 

@@ -17,7 +17,7 @@ buildscript {
         buildToolsVersion = "28.0.3"
 
         navigationArgsPath = '/build/generated/source/navigation-args'
-        appNavigation = "${project(':app').projectDir.path}$navigationArgsPath"
+        appNavigation = "${project(':main').projectDir.path}$navigationArgsPath"
         navigationPath = "${project(':navigation').projectDir.path}$navigationArgsPath"
     }
 

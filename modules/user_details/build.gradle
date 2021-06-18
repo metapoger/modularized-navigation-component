@@ -67,4 +67,7 @@ dependencies {
 
     implementation "com.github.bumptech.glide:glide:$GLIDE_VERSION"
     kapt "com.github.bumptech.glide:compiler:$GLIDE_VERSION"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
+    implementation "androidx.fragment:fragment-ktx:$FRAGMENT_VERSION"
 }

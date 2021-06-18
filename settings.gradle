@@ -1,10 +1,8 @@
-rootProject.name = "modularized-navigation-component"
+include ':main'
+project(':main').projectDir = new File(rootDir, 'modules/main')
 
 include ':core'
 project(':core').projectDir = new File(rootDir, 'modules/core')
-
-include ':app'
-project(':app').projectDir = new File(rootDir, 'modules/app')
 
 include ':home_screen'
 project(':home_screen').projectDir = new File(rootDir, 'modules/home_screen')

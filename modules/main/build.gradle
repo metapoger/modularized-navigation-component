@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -55,7 +55,6 @@ dependencies {
     implementation project(":home_screen")
     implementation project(":core")
     implementation project(":navigation")
-    implementation project(":navigation")
     implementation project(":onboarding")
     implementation project(":settings")
     implementation project(":splash")
@@ -66,6 +65,9 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
+    implementation "androidx.fragment:fragment-ktx:$FRAGMENT_VERSION"
 }
 
 tasks.whenTaskAdded { task ->
